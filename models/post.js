@@ -12,11 +12,11 @@ const PostSchema = mongoose.Schema({
     },
     picture: {
         type: String,
-        required: false
+       
     },
     username: {
         type: String,
-        required: true
+        required:false
     },
     categories: {
         type: Array,
@@ -28,6 +28,6 @@ const PostSchema = mongoose.Schema({
 });
 
 
-const post = mongoose.model('post', PostSchema);
+const Post = mongoose.model('post', PostSchema);
 
-export default post;
+export default Post;
